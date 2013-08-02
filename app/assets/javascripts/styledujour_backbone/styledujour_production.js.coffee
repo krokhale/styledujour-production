@@ -1,4 +1,4 @@
-define ['marionette', 'backbone', 'external_backbone/routers/app_router', 'external_backbone/models', 'editor'], (Marionette, Backbone, AppRouter, Models, editor) ->
+define ['marionette', 'backbone', 'styledujour_backbone/routers/app_router', 'styledujour_backbone/models', 'editor'], (Marionette, Backbone, AppRouter, Models, editor) ->
   StyleDujourApp = new Marionette.Application
 
 
