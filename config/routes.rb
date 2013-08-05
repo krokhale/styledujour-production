@@ -1,4 +1,6 @@
 Styledujour::Application.routes.draw do
+  get 'sign-up' => 'home#sign_up'
+  get 'sign-in' => 'home#sign_in'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

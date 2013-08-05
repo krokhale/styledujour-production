@@ -1,0 +1,32 @@
+.row-fluid
+  .span3.offset4
+    .row{:style=>"border:3px solid #eee; margin:30px;background:white"}
+      .span6
+        %form{:style=>"margin-left:30px;"}
+          %fieldset
+            %center
+              %h1{:style=>"color:#666;"} Easy Social Sign up
+            .row-fluid
+              %button.btn.btn-primary.btn-large{:type => "button", :style=>"margin-bottom:3px; width:250px; height:50px; font-size:18px;"} Sign up with facebook
+              %button.btn.btn-default.btn-danger{:type => "button", :style=>"margin-bottom:3px; width:250px; height:50px; font-size:18px;"} Sign up with google
+            %center
+              %h1{:style=>"color:#666;"} Or Create an Account
+            .form-group
+              %label{:for => "exampleInputFirstName"} First Name
+              %input#exampleInputEmail.form-control{:placeholder => "Enter First Name", :type => "text"}/
+            .form-group
+              %label{:for => "exampleInputLastName"} Last Name
+              %input#exampleInputPassword.form-control{:placeholder => "Enter Last Name", :type => "password"}/
+            .form-group
+              %label{:for => "exampleInputEmail"} Email
+              %input#exampleInputPassword.form-control{:placeholder => "Enter Email", :type => "password"}/
+            .form-group
+              %label{:for => "exampleInputPassword"} Password
+              %input#exampleInputPassword.form-control{:placeholder => "Password", :type => "password"}/
+            .form-group
+              %label{:for => "exampleInputPasswordConfirmation"} Password Confirmation
+              %input#exampleInputPassword.form-control{:placeholder => "Re-enter Password", :type => "password"}/
+            .row-fluid
+              By creating an account, I have read and agreed to the terms and conditions.
+              .offset3
+                %button.btn.btn-success{:type => "submit",  :style=>"margin-bottom:3px; width:250px; height:50px; font-size:20px;"} Create my Account
