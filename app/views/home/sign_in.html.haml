@@ -1,0 +1,37 @@
+.row-fluid{:style => "padding-top:7%;"}
+  .span7.offset2
+    .row{:style=>"border:3px solid #eee; margin:30px;background:white;padding:10px;"}
+      .span6{:style=>"border-right:1px solid #eee;"}
+        %form{:style=>"margin-left:30px;"}
+          %fieldset{:style=>"padding:10px;"}
+            %legend Sign in
+            .form-group
+              %label{:for => "exampleInputEmail"} Email address
+              %input#exampleInputEmail.form-control{:placeholder => "Enter email", :type => "text"}/
+            .form-group
+              %label{:for => "exampleInputPassword"} Password
+              %input#exampleInputPassword.form-control{:placeholder => "Password", :type => "password"}/
+            .checkbox
+              %label
+                %input{:type => "checkbox", :value => ""}
+                Remember Me
+            .row-fluid
+              .span4
+                %a{:href => "#"} Create an account
+                %br
+                %a{:href => "#"} Forgot your password.
+              .span8
+                %button.btn.btn-success{:type => "submit"}
+                  Login
+                  %i.icon-signin
+
+      .span6
+        .row-fluid
+          .span9.offset2
+            %button.btn.btn-primary.btn-large{:type => "button", :style=>"margin-bottom:20px;margin-top:100px;"}
+              %i.icon-facebook
+                Sign in with facebook
+            %br
+            %button.btn.btn-danger.btn-large{:type => "button"}
+              %i.icon-google-plus
+                Sign in with google
