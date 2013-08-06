@@ -1,4 +1,6 @@
 Styledujour::Application.routes.draw do
+  get "sessions/new"
+  get "users/new"
   get "home/home"
   get "home/help"
   get "home/about_us"
@@ -7,7 +9,22 @@ Styledujour::Application.routes.draw do
 
 
   get '/home' => "home#home"
+  get '/about_us' => "home#about_us"
+  get '/help' => "home#help"
   root :to => "home#home"
+
+
+
+  get "logout" => "sessions#destroy", :as => "logout"
+  get "login" => "sessions#new", :as => "login"
+  get "signup" => "users#new", :as => "signup"
+
+  resources :users
+  resources :sessions
+  resources :password_resets
+
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

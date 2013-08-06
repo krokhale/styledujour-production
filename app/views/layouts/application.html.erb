@@ -7,9 +7,39 @@
   <%= javascript_include_tag :modernizr %>
   <%= csrf_meta_tags %>
 </head>
-<body>
+<body class="body-background">
+<nav id="navbar-main-nav" class="navbar navbar-background">
+  <div class="row">
+    <a class="toggle" gumby-trigger="#navbar-main-nav #main-nav" href="#"><i class="icon-menu"></i></a>
+
+    <h1 class="six columns" style="margin-top: -15px;">
+      <a href="/">
+        Style-du-Jour
+      </a>
+    </h1>
+    <nav class="five columns">
+      <ul id="main-nav">
+        <li><a href="/about_us"><span>About Us </span><i class="icon-leaf" title="Features"></i></a>
+        </li>
+        <li>
+          <a href="/help"><span>Help </span><i class="icon-help-circled" title="Documentation"></i></a>
+        </li>
+        <li><a href="/signup"><span>Signup </span><i class="icon-user-add" title="Customize"></i></a></li>
+      </ul>
+    </nav>
+  </div>
+</nav>
 
 <%= yield %>
 
+<footer style="background-color:#e9e9e9; padding-top:10px; padding-bottom:5px">
+  <div class="row">
+    <ul class='three_up tiles'>
+      <li>© 2008-13 Style du Jour, Inc. All rights reserved.</li>
+      <li style="text-align:center">Privacy Policy</li>
+      <li style="text-align:center">Terms & Conditions</li>
+    </ul>
+  </div>
+</footer>
 </body>
 </html>
