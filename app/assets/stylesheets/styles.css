@@ -1,0 +1,11 @@
+.navbar-background {
+    background-image: url(../images/headerbg.gif) repeat-x top left #fff;
+
+    border-bottom: 1px solid #c2c2c2;
+    padding-bottom: 5px;
+}
+
+.body-background {
+    background-image: url(../images/pgaebg.gif);
+    background-repeat: repeat;
+}
