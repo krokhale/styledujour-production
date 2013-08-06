@@ -1,9 +1,9 @@
 Styledujour::Application.routes.draw do
-  get "home/home"
-  get "home/help"
-  get "home/about_us"
-  get "home/terms_conditions"
-  get "home/privacy"
+  get "/home" => "home#home"
+  get "/help" => "home#help"
+  get "/about_us" => "home#about_us"
+  get "/terms_conditions" => "home#terms_conditions"
+  get "/privacy" => "home#privacy"
 
 
   get '/home' => "home#home"
