@@ -1,4 +1,13 @@
 Styledujour::Application.routes.draw do
+  get "home/home"
+  get "home/help"
+  get "home/about_us"
+  get "home/terms_conditions"
+  get "home/privacy"
+
+
+  get '/home' => "home#home"
+  root :to => "home#home"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

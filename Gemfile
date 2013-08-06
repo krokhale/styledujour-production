@@ -44,6 +44,10 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+
+gem "modernizr-rails"
+gem 'gumby-framework'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
