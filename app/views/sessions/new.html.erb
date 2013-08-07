@@ -1,0 +1,33 @@
+<div class="row">
+
+  <div class="twelve columns" style="margin-bottom: 50px">
+    <div class="six columns" style="border: 1px solid #ccc; padding: 25px">
+      <h2>Log In</h2>
+
+      <%= form_tag sessions_path do %>
+          <div class="">
+            <%= label_tag :email %>
+            <%= text_field_tag :email, params[:email], :class => 'row' %>
+          </div><br>
+          <div class="">
+            <%= label_tag :password %>
+            <%= password_field_tag :password, nil, :class => 'row' %>
+          </div>
+          <br>
+          <br>
+          <div class="btn primary medium"><%= submit_tag "Log In" %></div>
+      <% end %>
+      <p><%= link_to "forgotten password?", new_password_reset_path %></p>
+      <div class="">
+        <%= check_box_tag :remember_me, 1, params[:remember_me] %>
+        <%= label_tag :remember_me %>
+      </div>
+    </div>
+
+    <div class="six columns"></div>
+
+  
+  </div>
+  
+</div>
+

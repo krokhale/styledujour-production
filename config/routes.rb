@@ -1,4 +1,5 @@
 Styledujour::Application.routes.draw do
+  get "password_resets/new"
   get "/home" => "home#home"
   get "/help" => "home#help"
   get "/about_us" => "home#about_us"
