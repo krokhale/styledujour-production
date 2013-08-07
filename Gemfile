@@ -11,7 +11,7 @@ end
 group :production do
   gem 'pg'
   gem 'rails_12factor'
-  gem 'puma'
+  #gem 'puma'
 end
 
 
@@ -43,6 +43,12 @@ group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
 end
+
+
+gem "modernizr-rails"
+gem 'gumby-framework'
+
+gem "bcrypt-ruby", '~> 3.0.0'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

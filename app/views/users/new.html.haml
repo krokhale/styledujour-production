@@ -1,0 +1,27 @@
+.row
+  .twelve.columns{:style => "margin-bottom: 50px"}
+    .six.columns{:style => "border: 1px solid #ccc; padding: 25px"}
+      %h1 Sign Up
+      = form_for @user do |f|
+        .row
+          - if @user.errors.any?
+            .error_messages
+              %h2 Form is invalid
+              %ul
+                - @user.errors.full_messages.each do |message|
+                  %li= message
+        .row
+          %div
+            = f.label :email
+            = f.text_field :email, :class => 'row'
+          %br/
+          %div
+            = f.label :password
+            = f.password_field :password, :class => 'row'
+          %br/
+          %div
+            = f.label :password_confirmation
+            = f.password_field :password_confirmation, :class => 'row'
+          %br/
+          .medium.primary.btn= f.submit "Sign Up"
+    .six.columns

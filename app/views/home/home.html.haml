@@ -1,0 +1,51 @@
+.container
+  .row
+    %h3 Slider
+    %img{:src => "http://placehold.it/940x300/1abc9c"}/
+.row{:style => "margin-top: 50px"}
+  .four.columns
+    %h3{:style => "padding-top: 0px;"} Title box 1
+    %img{:src => "http://placehold.it/350x250/2c3e50"}/
+  .four.columns
+    %h3{:style => "padding-top: 0px;"} Title box 2
+    %img{:src => "http://placehold.it/350x250/34495e"}/
+  .four.columns
+    %fieldset{:style => "border: 1px solid #ccc"}
+      %h3{:style => "background-color: #4fbfd3; border: 1px solid #2b8fa1; color: #fff; padding: 5px; text-align: center;"} Login
+      %br/
+      .row
+        %ul.eleven.columns.centered
+          %li.field
+            %input.email.input{:placeholder => "Email", :type => "email"}/
+          %li.field
+            %input.password.input{:placeholder => "Password", :type => "password"}/
+      .row
+        .six.columns
+          %ul
+            %li.field{:style => "padding-left: 10px"}
+              %label.checkbox.checked{:for => "check1"}
+                %input#check1{:checked => "checked", :name => "checkbox[]", :type => "checkbox", :value => "1"}/
+                %span
+                Remember Me
+        .six.columns
+          %h6
+            %a{:href => "", :style => "font-weight: bolder; text-align: right"} Forgot password
+      %ul.two_up.tiles{:style => "margin-bottom: 0px"}
+        %li
+          .medium.primary.btn.twelve.columns
+            %a{:href => "/login"} Login
+          %br/
+        %li
+          .medium.default.btn.twelve.columns
+            %a{:href => "/signup"} Signup
+          %br/
+.row{:style => "margin-top: 50px"}
+  .four.columns
+    %h3 Trending
+    %img{:src => "http://placehold.it/350x500/607080"}/
+  .four.columns
+    %h3 Collections
+    %img{:src => "http://placehold.it/350x500/e74c3c"}/
+  .four.columns
+    %h3 Stylists
+    %img{:src => "http://placehold.it/350x500/FF5C00"}/
